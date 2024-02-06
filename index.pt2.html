@@ -1,0 +1,120 @@
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+      <link
+    rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="mainTable">
+        <h1 class="title">TV TABLE OPTIONS</h1>
+        <table class="table table-striped">
+            <thead>
+                <th>#</th>
+                <th>Image</th>
+                <th>Name</th>
+                <th>Address</th>
+                <th>City</th>
+                <th>Price</th>
+                <th>Link</th>
+                <th>Rating</th>
+                <th>Options</th>
+            </thead>
+            <tbody>
+                <tr class="selectedRow">
+                    <th>1</th>
+                    <td>
+                        <a href="https://www.sharptvusa.com/" target="_blank">
+                            <img width="50px" src="https://res.cloudinary.com/sharp-consumer-eu/image/fetch/w_3000,f_auto/https://s3.infra.brandquad.io/accounts-media/SHRP/DAM/origin/51348e5e-1839-11eb-8a5b-cef435c3e00c.jpg">
+                        </a>
+                    </td>
+                    <td class="name">Sharp</td>
+                    <td class="address">hassourg 2, Israel</td>
+                    <td>Jerusalem</td>
+                    <td class="price">3500</td>
+                    <td>
+                        <a href="https://www.sharptvusa.com/" target="_blank">Store Link</a>
+                    </td>
+                    <td class="rating">3/5</td>
+                    <td>
+                        <button class="btn btn-sm btn-danger deleteBtn">delete</button>
+                        <button class="btn btn-sm btn-primary buyBtn" id="#buy">Buy</button>
+                    </td>
+                </tr>
+                <tr class="selectedRow">
+                    <th>2</th>
+                    <td>
+                     <a href="https://www.apple.com" target="_blank">
+                         <img width="50px" src="data:image/jpeg;base64,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" alt="">
+                     </a>
+                    </td>
+                    <td class="name">Apple</td>
+                    <td>Agrepas 42, Israel</td>
+                    <td>Nazareth</td>
+                    <td class="price">6000</td>
+                    <td>
+                        <a href="https://www.apple.com" target="_blank">Store Link</a>
+                    </td>
+                    <td class="rating">5/5</td>
+                    <td>
+                        <button class="btn btn-sm btn-danger deleteBtn">delete</button>
+                        <button class="btn btn-sm btn-primary buyBtn">Buy</button>
+                    </td>
+                </tr>
+                <tr class="selectedRow">
+                    <th>3</th>
+                    <td>
+                      <a href="https://www.samsung.com/us/" target="_blank">
+                        <img width="50px" src="https://images.samsung.com/is/image/samsung/africa-en-fhd-t5300-ua40t5300auxly-frontblack-243705836?$650_519_PNG$" alt="">
+                      </a>                    
+                    </td>
+                    <td class="name">Samsung</td>
+                    <td>king Goerge 23, Israel</td>
+                    <td>Ramot</td>
+                    <td class="price">4600</td>
+                    <td>
+                        <a href="https://www.samsung.com/us/" target="_blank">Store Link</a>
+                    </td>
+                    <td class="rating">1/5</td>
+                    <td>
+                        <button class="btn btn-sm btn-danger deleteBtn">delete</button>
+                        <button class="btn btn-sm btn-primary buyBtn">Buy</button>
+                    </td>
+                </tr>
+                <tr class="selectedRow">
+                    <th>4</th>
+                    <td>
+                        <a href="https://www.toshiba.com/tai/" target="_blank">
+
+                            <img width="50px" src="https://www.intex.in/cdn/shop/products/1_9b8014ad-124e-4742-a628-9a4c4affe617.jpg?v=1648711109" alt="">
+                        </a>                   
+                    </td>
+                    <td class="name">Toshiba</td>
+                    <td>asser 55, Israel</td>
+                    <td>Tel-Aviv</td>
+                    <td class="price">3100</td>
+                    <td>
+                        <a href="https://www.toshiba.com/tai/" target="_blank">Store Link</a>
+                    </td>
+                    <td class="rating">2/5</td>
+                    <td>
+                        <button class="btn btn-sm btn-danger deleteBtn">delete</button>
+                        <button class="btn btn-sm btn-primary buyBtn">Buy</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+
+    <script src="index.pt2.js"></script>
+
+</body>
+</html>

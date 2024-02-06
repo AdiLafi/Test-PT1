@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="style.css">
+    <title>BUY-BTN</title>
+</head>
+<body>
+    <div class="container mt-5 mainContainer"> 
+        <h1 class="title">Store Info</h1>
+        <table class="table table-striped table-bordered border-dark tabel-hover text-center"> 
+       <tr> 
+           <td>Name Of The Store:</td> 
+           <td class="storeName"></td> 
+       </tr> 
+       <tr> 
+           <td>Price:</td> 
+           <td class="price"></td> 
+       </tr> 
+       <tr> 
+           <td>Credit Card number:</td> 
+           <td>
+            <input type="text" placeholder="XXXX-XXXX-XXXX-XXXX">
+           </td> 
+       </tr> 
+       <tr> 
+           <td>Date of expiration:</td> 
+           <td>
+            <input type="date">
+           </td> 
+       </tr> 
+   </table> 
+   <button class="btn btn-success">Send</button> 
+   </div>
+
+   <script src="send.js"></script>
+</body>
+</html>
